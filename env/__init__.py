@@ -1,13 +1,14 @@
-from os import getcwd, path
-from os.path import isfile
-from dotenv import load_dotenv
+import os as _os
+import dotenv as _dotenv
 
-dirName = getcwd()
+_dirName = _os.getcwd()
 
 for _ in range(5): 
-    dotenv_path = path.join(dirName, '.env')
-    if (isfile(dotenv_path)): 
+    _dotenv_path = _os.path.join(_dirName, '.env')
+    if (_os.path.isfile(_dotenv_path)): 
         break
-    dirName = path.join(dirName, '..')
+    _dirName = _os.path.join(_dirName, '..')
 
-load_dotenv(dotenv_path)
+def load_env():
+    _dotenv.load_dotenv(_dotenv_path)
+
