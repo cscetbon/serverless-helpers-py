@@ -10,12 +10,12 @@ def read_requirements(path):
 install_requires = read_requirements('requirements.txt')
 
 setup(
-    name='Serverless-Helpers-Py',
+    name='serverless-env',
     version='0.1',
     url='http://github.com/cscetbon/serverless-helpers-py',
     license='BSD',
     description='Adds SQLAlchemy support to your Flask application',
-    packages=['env'],
+    packages=['serverless_env'],
     zip_safe=False,
     platforms='any',
     install_requires=install_requires,
