@@ -11,13 +11,15 @@ install_requires = read_requirements('requirements.txt')
 
 setup(
     name='serverless-env',
-    version='0.1',
+    version='0.2',
     url='http://github.com/cscetbon/serverless-helpers-py',
     license='BSD',
-    description='Adds SQLAlchemy support to your Flask application',
+    description='Helper functions for Serverless',
+    author='Cyril Scetbon',
+    author_email='cscetbon@xxxx.com',
     packages=['serverless_env'],
     zip_safe=False,
-    platforms='any',
+    include_package_data=True,
     install_requires=install_requires,
     classifiers=[
         'Programming Language :: Python :: 2.7',
